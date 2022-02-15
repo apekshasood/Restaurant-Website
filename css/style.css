@@ -48,7 +48,8 @@ section:nth-child(even) {
     text-transform: uppercase;
 }
 
-.btn {
+.orderbtn,
+.orderbtn2 {
     margin-top: 1rem;
     display: inline-block;
     font-size: 1.7rem;
@@ -59,7 +60,8 @@ section:nth-child(even) {
     padding: .8rem 3rem;
 }
 
-.btn:hover {
+.orderbtn:hover,
+.orderbtn2:hover {
     background: var(--green);
     letter-spacing: .1rem;
 }
@@ -113,6 +115,18 @@ header .icons a {
     color: var(--black);
     border-radius: 50%;
     background: #eee;
+}
+
+header .icons p {
+    position: absolute;
+    top: 3.8rem;
+    right: 10.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: green;
+    border-radius: 50%;
+    padding: 0 4px;
+    color: #fff;
 }
 
 header .icons i:hover,
@@ -553,6 +567,12 @@ header .icons #menu-bars {
     color: var(--black);
 }
 
+.fa-trash-alt {
+    font-size: 15px;
+    color: #008000;
+    font-weight: 600;
+}
+
 .footer .box-container .box a {
     display: block;
     padding: .5rem 0;
@@ -604,6 +624,62 @@ header .icons #menu-bars {
 }
 
 
+/* add to cart css start*/
+
+.cart-show {
+    display: block;
+}
+
+.carthide {
+    display: none !important;
+}
+
+.cart-items {
+    position: fixed;
+    top: 7.5rem;
+    right: 4rem;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 15px;
+    border-radius: 1rem;
+    z-index: 1000;
+    box-shadow: 1px 4px 10px -5px grey;
+}
+
+.cart-items img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.cart-items .content-card {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.cart-items .addBtn,
+.cart-items .subBtn,
+.cart-items .addBtn2,
+.cart-items .subBtn2 {
+    background: green;
+    padding: 0 6px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: bolder;
+    color: white;
+}
+
+.content-cards th {
+    padding: 10px;
+}
+
+
+/* add to cart css ends*/
+
+
 /* media queries  */
 
 @media (max-width:991px) {
@@ -615,6 +691,9 @@ header .icons #menu-bars {
     }
     section {
         padding: 15rem;
+    }
+    header .icons .p {
+        right: 1.8rem;
     }
 }
 
