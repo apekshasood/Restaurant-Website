@@ -691,9 +691,9 @@ header .icons #menu-bars {
   header {
     padding: 1rem 2rem;
   }
-  section {
+  /* section {
     padding: 15rem;
-  }
+  } */
   header .icons .p {
     right: 1.8rem;
   }
@@ -723,6 +723,9 @@ header .icons #menu-bars {
     margin: 1rem;
     font-size: 2rem;
     background: #eee;
+  }
+  header .icons p {
+    right: 5.3rem;
   }
   #search-form #search-box {
     width: 90%;
